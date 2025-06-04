@@ -785,7 +785,7 @@ form .formbtn {
 
   .header__container {
     padding-top: 2rem;
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(1fr);
     align-items: center;
     gap: 0;
     max-width: 100%;
@@ -806,16 +806,16 @@ form .formbtn {
   }
 
   .service__grid {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(1fr);
   }
 
   .about__container {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1fr);
     align-items: center;
   }
 
   .portfolio__header {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1fr);
   }
 
   .portfolio__header :is(.section__header, .section__description) {
@@ -823,7 +823,7 @@ form .formbtn {
   }
 
   .portfolio__content {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1fr);
     align-items: center;
   }
 
