@@ -725,11 +725,11 @@ form .formbtn {
   }
 }
 
-/* @media (width > 768px) {
+@media (width > 768px) {
   nav {
     position: static;
     padding: 1rem;
-    max-width: var(--max-width);
+    max-width: 100%;
     margin-inline: auto;
     display: flex;
     align-items: center;
@@ -742,7 +742,7 @@ form .formbtn {
     flex: 1;
     padding: 0;
     background-color: transparent;
-  } */
+  }
 
   .nav__logo a {
     color: var(--text-dark);
