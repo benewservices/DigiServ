@@ -938,3 +938,44 @@ form .formbtn {
     gap: 2rem;
   }
 }
+
+@media (max-width: 768px) {
+  .header__content h1 {
+    font-size: 2.5rem;
+    line-height: 3rem;
+  }
+
+  .nav__links {
+    top: 100%;
+    transform: translateY(-100%);
+  }
+
+  .nav__links.open {
+    transform: translateY(0%);
+  }
+
+  .header__btns {
+    flex-direction: column;
+  }
+
+  .service__grid,
+  .about__container,
+  .portfolio__header,
+  .portfolio__content {
+    grid-template-columns: 1fr;
+  }
+
+  .portfolio__image__content {
+    flex-direction: column;
+    right: 1rem;
+    padding: 1rem;
+  }
+
+  .feedback__card {
+    padding: 1rem;
+  }
+
+  .swiper-slide {
+    min-width: 300px;
+  }
+}
