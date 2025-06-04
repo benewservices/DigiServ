@@ -788,13 +788,13 @@ form .formbtn {
   }
 
   .header__image {
-    grid-area: 1/2/2/3;
+/*     grid-area: 1/2/2/3; */
     max-width: 100%
   }
 
   .header__content :is(h1, .section__description) {
     text-align: left;
-    max-width: 100%
+/*     max-width: 100% */
   }
 
   .header__btns {
