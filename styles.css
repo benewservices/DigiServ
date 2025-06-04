@@ -779,6 +779,10 @@ form .formbtn {
     justify-content: flex-end;
   }
 
+  section__container{
+    max-width: 100%;
+  }
+
   .header__container {
     padding-top: 2rem;
 /*     grid-template-columns: repeat(2, 1fr); */
