@@ -1,8 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
 :root {
-  --primary-color: #e5306f ;
-  --secondary-color:  #ff8906;
+  --primary-color: #e5306f;
+  --secondary-color: #ff8906;
   --text-dark: #0e0d16;
   --text-light: #767268;
   --extra-light: #f7f8fd;
@@ -25,7 +25,7 @@
   font-family: "Montserrat", sans-serif;
   white-space: nowrap;
   color: var(--white);
-  background-color: var(--text-dark);
+  background-color: var(--primary-color);
   border-radius: 5px;
   transition: 0.3s;
   cursor: pointer;
@@ -152,7 +152,7 @@ nav {
 
 .header__content h1 {
   margin-bottom: 1rem;
-  font-size: 4rem;
+  font-size: 3rem;
   font-weight: 800;
   color: var(--text-dark);
   line-height: 4.75rem;
@@ -232,23 +232,6 @@ nav {
   border-color: #00bcff;
 }
 
-.service__card:nth-child(5):hover {
-  border-color:#00bcff;
-}
-
-.service__card:nth-child(6):hover {
-  border-color: #c27aff;
-}
-
-.service__card:nth-child(7):hover {
-  border-color: #3e87e6;
-}
-
-.service__card:nth-child(8):hover {
-  border-color: #00d5be;
-}
-
-
 .service__card div {
   margin-bottom: 1rem;
   max-width: max-content;
@@ -273,26 +256,6 @@ nav {
 }
 
 .service__card:nth-child(4) div {
-  color: #00bcff;
-  background-color: #f0f9ff;
-}
-
-.service__card:nth-child(5):hover {
-  color: #00bcff;
- background-color: #f0f9ff;
-}
-
-.service__card:nth-child(6):hover {
-  background-color: #faf5ff;
-  color: #c27aff;
-}
-
-.service__card:nth-child(7):hover {
-  color: #3e87e6;
-  background-color: #f0f9ff;
-}
-
-.service__card:nth-child(8):hover {
   color: #00bcff;
   background-color: #f0f9ff;
 }
@@ -556,77 +519,22 @@ nav {
 
 .subscribe__content form {
   width: 100%;
-  /* max-width: 600px; */
-  /* margin-inline: auto; */
+  max-width: 600px;
+  margin-inline: auto;
   padding: 0.25rem;
-  /* display: flex; */
+  display: flex;
   align-items: center;
-  /* background-color: var(--white); */
+  background-color: var(--white);
   border-radius: 0.5rem;
 }
 
 .subscribe__content input {
-  /* width: 100%; */
+  width: 100%;
   padding-inline: 1rem;
   outline: none;
   border: none;
   font-size: 1rem;
   color: var(--text-dark);
-}
-
-form input{
-  width: 50%;
-  margin:auto;
-  padding: 0.75rem 1rem;
-  margin-right: 0.5rem;
-  border: 1px solid var(--text-light);
-  border-radius: 0.5rem;
-  transition: 0.3s;
-  margin-bottom: 1rem;
-  margin-top: 1rem;
-  margin-left: 18rem;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 500;
-  background-color: var(--white);
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
-  color: var(--text-dark);
-}
-
-
-
-form textarea {
-  width: 50%;
-  height: 50vh;
-  padding: 0.75rem 1rem;
-  outline: none;
-  border: none;
-  font-size: 1rem;
-  color: var(--text-dark);
-  resize: vertical;
-  border-radius: 0.5rem;
-  transition: 0.3s;
-  margin-bottom: 1rem;
-  margin-top: 1rem;
-  margin-left: 18rem;
-  border-radius: 0.5rem;
-  transition: 0.3s;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 500;
-}
-form .formbtn {
-  padding: 0.75rem 1.5rem;
-  outline: none;
-  border: none;
-  font-size: 1rem;
-  font-weight: 500;
-  font-family: "Montserrat", sans-serif;
-  white-space: nowrap;
-  color: var(--white);
-  background-color: var(--text-dark);
-  border-radius: 5px;
-  transition: 0.3s;
-  cursor: pointer;
-  margin-left: 28rem;
 }
 
 .footer__container {
@@ -725,11 +633,11 @@ form .formbtn {
   }
 }
 
-@media (min-width: 768px) {
+@media (width > 768px) {
   nav {
     position: static;
     padding: 1rem;
-    max-width: 100%;
+    max-width: var(--max-width);
     margin-inline: auto;
     display: flex;
     align-items: center;
@@ -779,26 +687,19 @@ form .formbtn {
     justify-content: flex-end;
   }
 
-  section__container{
-    max-width: 100%;
-  }
-
   .header__container {
     padding-top: 2rem;
-    grid-template-columns: repeat(1fr);
+    grid-template-columns: repeat(2, 1fr);
     align-items: center;
     gap: 0;
-    max-width: 100%;
   }
 
   .header__image {
-/*     grid-area: 1/2/2/3; */
-    max-width: 100%
+    grid-area: 1/2/2/3;
   }
 
   .header__content :is(h1, .section__description) {
     text-align: left;
-/*     max-width: 100% */
   }
 
   .header__btns {
@@ -806,16 +707,16 @@ form .formbtn {
   }
 
   .service__grid {
-    grid-template-columns: repeat(1fr);
+    grid-template-columns: repeat(4, 1fr);
   }
 
   .about__container {
-    grid-template-columns: repeat(1fr);
+    grid-template-columns: repeat(2, 1fr);
     align-items: center;
   }
 
   .portfolio__header {
-    grid-template-columns: repeat(1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .portfolio__header :is(.section__header, .section__description) {
@@ -823,7 +724,7 @@ form .formbtn {
   }
 
   .portfolio__content {
-    grid-template-columns: repeat(1fr);
+    grid-template-columns: repeat(2, 1fr);
     align-items: center;
   }
 
@@ -850,93 +751,3 @@ form .formbtn {
     padding: 2rem 1.5rem;
   }
 }
-
-@media (min-width: 768px) {
-  .header__container {
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-    max-width: 100%
-  }
-
-  .about__container {
-    grid-template-columns: 1fr 1fr;
-  }
-
-  .portfolio__header {
-    grid-template-columns: 1fr 1fr;
-  }
-
-  .portfolio__content {
-    grid-template-columns: 1fr 1fr;
-  }
-
-  .service__grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-/* Desktops (≥ 1024px) */
-@media (min-width: 1024px) {
-  .service__grid {
-    grid-template-columns: repeat(4, 1fr);
-  }
-
-  .feedback__card {
-    max-width: 350px;
-  }
-
-  .nav__btns {
-    display: flex;
-    gap: 1rem;
-  }
-
-  .nav__links {
-    position: static;
-    flex-direction: row;
-    justify-content: flex-end;
-    background-color: transparent;
-    transform: translateY(0);
-    gap: 2rem;
-    z-index: auto;
-  }
-
-  .nav__menu__btn {
-    display: none;
-  }
-}
-@media (min-width: 1200px) {
-  .section__container {
-    padding: 6rem 2rem;
-  }
-
-  .header__image img {
-    max-width: 600px;
-  }
-
-  .portfolio__image img {
-    max-width: 700px;
-  }
-
-  .portfolio__header {
-    grid-template-columns: repeat(3, 1fr);
-  }
-
-  .portfolio__image {
-    grid-area: 1/3/2/4;
-  }
-
-  .portfolio__content {
-    grid-template-columns: repeat(3, 1fr);
-  }
-
-  .portfolio__list {
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1.5rem;
-  }
-
-  .portfolio__list {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 2rem;
-  }
-}
-
