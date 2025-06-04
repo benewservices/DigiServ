@@ -781,7 +781,7 @@ form .formbtn {
 
   .header__container {
     padding-top: 2rem;
-    grid-template-columns: repeat(2, 1fr);
+/*     grid-template-columns: repeat(2, 1fr); */
     align-items: center;
     gap: 0;
     max-width: 100%
