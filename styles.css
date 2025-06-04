@@ -855,6 +855,7 @@ form .formbtn {
   .header__container {
     grid-template-columns: 1fr 1fr;
     align-items: center;
+    max-width: 100%
   }
 
   .about__container {
