@@ -784,6 +784,7 @@ form .formbtn {
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
     gap: 0;
+    max-width: 100%
   }
 
   .header__image {
